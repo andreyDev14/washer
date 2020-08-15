@@ -1,0 +1,165 @@
+.popup 
+	position: fixed
+	top: 0
+	right: 0
+	bottom: 0
+	left: 0
+	z-index: 10
+
+	display: none
+	width: 100%
+	height: 100%
+	overflow: hidden
+
+	background: rgba(0,0,0,0.5)
+
+
+	&-content 
+		position: fixed
+		top: 50%
+		left: 50%
+		z-index: 9
+
+		display: flex
+		flex-direction: column
+		align-items: center
+		width: 100%
+		max-width: 750px
+		min-height: 429px
+		padding-top: 55px
+		padding-bottom: 55px
+		transform: translateX(-50%) translateY(-50%)
+			
+		text-align: center
+
+		border-radius: 4px
+		background: #fff
+
+		.form
+			max-width: 444px
+
+			// color: #121a27
+			color: #000 
+
+			background: none
+
+			&__title
+				margin-bottom: 20px
+				font-size: 20px
+				font-weight: 400
+				line-height: 1
+				+e-bold
+
+			&__subtitle
+				margin-bottom: 33px
+
+				font-size: 17px
+				+bold
+				font-weight: 400
+				// +bold
+				line-height: 1.2
+				opacity: .9
+
+			form
+				display: flex
+				flex-direction: column
+				align-items: center
+
+				span
+					width: 100%
+					max-width: 225px
+					margin-bottom: 10px
+
+					input
+						width: 100%
+						height: 43px
+						padding-left: 22px
+
+						font-size: 14px
+						font-weight: 700
+						color: #000000
+						+cir
+
+						border-radius: 3px
+						border: 2px solid #dddddd
+						background-color: #ffffff
+
+						&::placeholder
+							font-size: 14px
+							font-weight: 700
+							color: #000000
+							+cir
+
+					textarea
+						width: 100%
+						max-width: 100%
+						padding-left: 22px
+						padding-top: 22px
+						
+						font-size: 14px
+						font-weight: 700
+						color: #000000
+						+cir
+
+						border-radius: 3px
+						border: 2px solid #dddddd
+						background-color: #ffffff
+
+						resize: none
+						
+						&::placeholder
+							font-size: 14px
+							font-weight: 700
+							+cir
+							color: #000000
+
+				.submit-button
+					width: 100%
+					max-width: 225px
+					margin-bottom: 27px
+					
+					input
+						width: 100%
+						height: 47px
+						
+						font-size: 12px
+						font-weight: 400
+						text-transform: uppercase
+						+e-bold
+						color: #ffffff
+
+						border-radius: 5px
+						background-color: #6f10ba
+
+				small
+					font-size: 12px
+					font-weight: 400
+					+bold
+					line-height: 1.1
+
+	&-close
+		position: absolute
+		right: 24px
+		top: 5px 
+
+		font-size: 36px
+			
+		cursor: pointer
+
+		+trs
+
+		&:hover
+			color: $act
+
+	&-thank
+		.popup-content
+			min-height: 253px
+			
+		&__button
+			min-width: 225px
+			height: 43px
+			font-size: 11px
+			font-weight: 400
+			text-transform: uppercase
+
+

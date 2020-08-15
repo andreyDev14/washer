@@ -1,0 +1,63 @@
+.master
+	margin-bottom: 41px
+	
+	&__title
+		margin-bottom: 25px
+
+	&-wrapper
+		display: flex
+		justify-content: space-between
+		margin-top: calc(-194px / 2)
+
+	&__item
+		display: flex
+		flex-direction: column
+		align-items: center
+		width: 262px
+
+		cursor: pointer
+		
+		+trs
+
+		&:hover
+			.master__item-bottom
+				box-shadow: 0 14px 62px rgba(0, 0, 0, 0.36)
+
+		&-img
+			width: 194px
+			height: 194px
+			transform: translatey(50%)
+
+			border-radius: 50%
+			object-fit: cover
+
+		&-bottom
+			display: flex
+			flex-direction: column
+			align-items: center
+			justify-content: flex-end
+			width: 100%
+			height: 236px
+			padding: 0 10px 33px 10px
+
+			box-shadow: 0 14px 62px rgba(0, 0, 0, 0.16)
+			border-radius: 3px
+
+			+trs
+
+		&-name
+			margin-bottom: 8px
+
+			font-size: 24px
+			font-weight: 700
+
+		&-age, &-exp
+			font-size: 16px
+			font-weight: 600
+			line-height: 1
+			opacity: .8
+
+		&-age
+			margin-bottom: 4px
+
+			

@@ -1,0 +1,100 @@
+.price
+	margin-bottom: 47px
+
+	&__title
+		margin-bottom: 29px
+
+	&__bottom
+		display: flex
+		justify-content: flex-end
+		align-items: center
+		padding-right: 72px
+
+		&-right
+			display: flex
+			align-items: center
+
+	&__button
+		min-width: 173px
+		height: 54px
+
+		margin-right: 115px
+		
+	small
+		display: block
+		margin-right: 20px
+		
+		+e-bold
+		color: #25313f
+		font-size: 10px
+		font-weight: 500
+
+	&__payment
+		display: flex
+		align-items: center
+
+		img
+			margin-right: 18px
+			object-fit: contain
+
+			&:nth-child(3)
+				margin-right: 0
+
+	&__table
+		margin-bottom: 32px
+
+	&__row
+		display: flex
+		align-items: center
+		justify-content: space-between
+		min-height: 44px
+		margin-bottom: 1px
+		padding: 7px 53px
+
+		background-color: #f1f6f9
+
+		+trs
+
+		+trs
+
+		cursor: pointer
+
+		span
+			color: #25313f
+			font-size: 14px
+			font-weight: 700
+			line-height: 1.1
+
+			&:nth-child(1)
+				width: 90%
+
+				color: #000000
+				+e-bold
+				font-size: 16px
+				font-weight: 400
+
+			&:nth-child(2)
+				width: 8%
+				
+				text-align: center
+
+			// &:nth-child(3)
+			// 	width: 9%
+
+			// 	text-align: center
+
+		&:nth-child(1)
+			min-height: 46px
+
+			box-shadow: 0 11px 35px rgba(173, 172, 171, 0.64)
+			border-radius: 4px 4px 0 0
+			background-color: #ff9600
+			// background-color: #7433fb
+
+			span
+				color: #ffffff
+				font-size: 14px
+				font-weight: 700
+
+		&:hover:not(:first-child)
+			background: darken(#f1f6f9, 6%)

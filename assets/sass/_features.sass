@@ -1,0 +1,49 @@
+.features
+	margin-bottom: 65px
+
+	&__title
+		margin-bottom: 24px
+	
+	&-wrapper
+		display: flex
+		justify-content: space-between
+	
+	&__item
+		display: flex
+		flex-direction: column
+		align-items: center
+		justify-content: center
+		width: 100%
+		max-width: 261px
+		min-height: 202px
+		padding: 15px 10px  
+		
+		text-align: center
+		color: #ffffff
+
+		box-shadow: 0 11px 35px rgba(173, 172, 171, 0.64)
+		border-radius: 4px
+		background-color: #ff9600
+
+		cursor: pointer
+
+		+trs
+
+		&:hover
+			background: darken(#ff9600, 4%)
+
+		&-icon  
+			margin-bottom: 25px
+
+			fill: #fff
+
+		&-title
+			+e-bold
+			font-weight: 400
+
+		&-text
+			+bold
+			font-weight: 700
+			line-height: 1.2
+
+			

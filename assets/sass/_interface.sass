@@ -1,0 +1,99 @@
+
+*
+	box-sizing: border-box
+	outline: none
+
+*:focus
+	outline: none
+	  
+a, button, input, input:focus, li, textarea
+	border: none
+	text-decoration: none
+	color: inherit
+	outline: none
+	list-style: none
+
+a:hover, button:hover
+	cursor: pointer
+
+body, html
+	height: 100%
+
+body
+	margin: 0 auto
+	
+	+cir 
+	overflow-x: hidden
+
+input
+	padding: 0 10px
+
+input[type="submit"]
+	appearance: none
+	cursor: pointer
+
+	box-shadow: 0 11px 35px rgba(173, 172, 171, 0.64)
+	border-radius: 3px
+	background-image: linear-gradient(to top, #0069f8 0%, #0093e9 100%)
+
+	+trs
+
+	&:hover
+		box-shadow: 0 5px 35px rgba(0, 120, 143, 0.34)
+
+h1,h2,h3,h4,h5,h6,p, ul
+	margin: 0	
+	padding: 0
+	
+img
+	max-width: 100%
+	border: none
+	outline: none
+
+.button
+	box-shadow: 0 11px 35px rgba(173, 172, 171, 0.64)
+	border-radius: 3px
+	background: linear-gradient(to top, #0069f8 0%, #0093e9 100%)
+
+	color: #ffffff
+	+e-bold
+	
+	font-size: 12px
+	font-weight: 400
+	text-transform: uppercase
+
+	cursor: pointer
+
+	+trs
+
+	&:hover
+		box-shadow: 0 5px 35px rgba(0, 120, 143, 0.44)
+
+.title
+	text-align: center
+	color: #000000
+	+e-bold
+	font-size: 50px
+	font-weight: 400
+
+.container
+	position: relative 
+	margin-left: auto 
+	margin-right: auto 
+	max-width: 100%
+
+@media (min-width: 576px)
+	.container
+		width: 540px
+		
+@media (min-width: 768px)
+	.container
+		width: 720px
+		
+@media (min-width: 992px)
+	.container
+		width: 980px
+
+@media (min-width: 1200px)
+	.container
+		width: 1134px 
